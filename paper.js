@@ -21,7 +21,7 @@ class Paper{
         strokeWeight(3);
         fill("green");
         imageMode(CENTER);
-        image(this.image, 0,0,this.r);
+        image(this.image, 0,0,this.r,this.r);
         pop();
     }
 }

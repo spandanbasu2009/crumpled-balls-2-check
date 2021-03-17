@@ -20,8 +20,8 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper = new Paper(100,450,70);
-	paper.shapeColor = color("green");
+	paper = new Paper(400,300,70);
+	//paper.shapeColor = color("green");
 	//dustbinPart1 = new Dustbin(1000,630,150,20);
 	dustbinPart2 = new Dustbin(1000,550,160,190);
 	//dustbinPart3 = new Dustbin(1000,550,155,200);
