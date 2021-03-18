@@ -18,7 +18,7 @@ class Dustbin{
         //rotate(dustbinangle);
         //imageMode(CENTER);
         strokeWeight(3);
-        fill(255,0,255);
+        fill("white");
         imageMode(CENTER);
         image(this.image,0,0,this.width,this.height);
         pop();

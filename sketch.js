@@ -13,19 +13,20 @@ function preload()
 }
 
 function setup() {
-	createCanvas(1200, 700);
+	createCanvas(1600, 700);
 
 
 	engine = Engine.create();
 	world = engine.world;
 
 	//Create the Bodies Here.
-	paper = new Paper(400,300,70);
+	paper = new Paper(690,450,70);
 	//paper.shapeColor = color("green");
-	//dustbinPart1 = new Dustbin(1000,630,150,20);
-	dustbinPart2 = new Dustbin(1000,550,160,190);
-	//dustbinPart3 = new Dustbin(1000,550,155,200);
-	ground = new Ground(400,650,1700,10);
+	//dustbinPart1 = new Dustbin(960,550,150,200);
+	dustbinPart2 = new Dustbin(1200,555,200,213);
+	//dustbinPart2 = loadImage("dustbin.png");
+	//dustbinPart3 = new Dustbin(1040,550,150,200);
+	ground = new Ground(800,670,1600,20);
 
 	Engine.run(engine);
   
@@ -33,7 +34,7 @@ function setup() {
 
 
 function draw() {
-  background(0);
+  background("grey");
   Engine.update(engine);
   paper.display();
   //dustbinPart1.display();
@@ -49,7 +50,7 @@ function draw() {
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-85});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:170,y:-215});
 	}
 }
 
